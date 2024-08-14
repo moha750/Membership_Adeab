@@ -7,14 +7,14 @@ var list=document.querySelectorAll(".progress-bar li")
 let formnumber=0;
 
 
-create_workspace.addEventListener('click',function(){
-    if(!validateform()){
-        return false;
-    }
-   formnumber++;
-   updateform();
-   progress_forward();
-});
+// create_workspace.addEventListener('click',function(){
+//     if(!validateform()){
+//         return false;
+//     }
+//    formnumber++;
+//    updateform();
+//    progress_forward();
+// });
 
 next_click.forEach(function(next_page){
     next_page.addEventListener('click',function(){
@@ -75,6 +75,4 @@ function validateform(){
         }
     });
     return validate;
-
-    
 }
